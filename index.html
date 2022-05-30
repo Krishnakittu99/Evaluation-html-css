@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit2 C2</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #banner {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 70px;
+        background-color: rgb(4, 4, 170);
+        border-radius: 22px;
+        margin-bottom: 40px;
+        color: white;
+      }
+      .banner-description {
+        margin-top: 60px;
+        line-height: 35px;
+      }
+      .banner-description button {
+        border: 0;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      #main {
+        width: 90%;
+        margin: auto;
+      }
+      #services {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 25px;
+      }
+
+      .consultation {
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      }
+      .consultation img {
+        padding: 5px 23.5px 0 23.5px;
+        background-color: rgb(124, 157, 207);
+      }
+      .description {
+        padding: 20px;
+        line-height: 24px;
+      }
+      .description p {
+        color: rgb(172, 175, 177);
+      }
+      .work-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-bottom: 45px;
+
+        gap: 30px;
+      }
+      #works h1 {
+        text-align: center;
+        margin-top: 50px;
+        line-height: 45px;
+      }
+      #works > p {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+      .work-content {
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      }
+      .work-description {
+        padding: 5px 15px 25px 5px;
+      }
+      .work-description p {
+        text-align: left;
+        font-size: 16px;
+        color: black;
+      }
+
+      /* Medium Screen */
+      @media only screen and (min-width: 500px) and (max-width: 768px) {
+        #services {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          gap: 25px;
+        }
+        .work-container {
+          display: grid;
+          grid-template-columns: auto auto;
+          margin-bottom: 45px;
+          gap: 30px;
+        }
+        #banner {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      /* Small Screen */
+      @media only screen and (min-width: 320px) and (max-width: 499px) {
+        #services {
+          display: grid;
+          grid-template-columns: auto auto;
+          gap: 25px;
+        }
+        .work-container {
+          display: grid;
+          grid-template-columns: auto;
+          margin-bottom: 45px;
+          gap: 30px;
+        }
+        #banner {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="banner">
+        <!-- Here should be 2 divs one for the banner heading and button and the second is for banner image -->
+        <div class="banner-description">
+          <h1>You are in safe hands</h1>
+          <p>Choose the experts in end to end surgical care</p>
+          <button>Know More</button>
+        </div>
+        <div>
+          <img
+            src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png"
+            alt="Icon"
+            height="280px"
+            width="400px"
+          />
+        </div>
+      </div>
+      <div id="services">
+        <!-- Here should be 6 divs. All of them should be in a single line for large screen. For medium and large screen refer to question statement -->
+        <div class="consultation">
+          <div>
+            <img
+              src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+              alt="IMG"
+              width="150px"
+              height="200px"
+            />
+          </div>
+          <div class="description">
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+        </div>
+        <div class="consultation">
+          <div>
+            <img
+              src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+              alt="IMG"
+              width="150px"
+              height="200px"
+            />
+          </div>
+          <div class="description">
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+        </div>
+        <div class="consultation">
+          <div>
+            <img
+              src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+              alt="IMG"
+              width="150px"
+              height="200px"
+            />
+          </div>
+          <div class="description">
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+        </div>
+        <div class="consultation">
+          <div>
+            <img
+              src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+              alt="IMG"
+              width="150px"
+              height="200px"
+            />
+          </div>
+          <div class="description">
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+        </div>
+        <div class="consultation">
+          <div>
+            <img
+              src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+              alt="IMG"
+              width="150px"
+              height="200px"
+            />
+          </div>
+          <div class="description">
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+        </div>
+        <div class="consultation">
+          <div>
+            <img
+              src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"
+              alt="IMG"
+              width="150px"
+              height="200px"
+            />
+          </div>
+          <div class="description">
+            <h3>Instant Video Consultation</h3>
+            <p>Connect within 60 secs</p>
+          </div>
+        </div>
+      </div>
+      <div id="works">
+        <h1>Book an appointment for an in-clinic consultation</h1>
+        <p>Find experienced doctors across all specialties</p>
+        <div class="work-container">
+          <div class="work-content">
+            <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+            <div class="work image">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt="IMG"
+                width="319px"
+                height="220px"
+              />
+              <div class="work-description">
+                <h3>Dentist</h3>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+            <div class="work image">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt="IMG"
+                width="319px"
+                height="220px"
+              />
+              <div class="work-description">
+                <h3>Dentist</h3>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+            <div class="work image">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt="IMG"
+                width="319px"
+                height="220px"
+              />
+              <div class="work-description">
+                <h3>Dentist</h3>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+            <div class="work image">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt="IMG"
+                width="319px"
+                height="220px"
+              />
+              <div class="work-description">
+                <h3>Dentist</h3>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-container">
+          <div class="work-content">
+            <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+            <div class="work image">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt="IMG"
+                width="319px"
+                height="220px"
+              />
+              <div class="work-description">
+                <h3>Dentist</h3>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+            <div class="work image">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt="IMG"
+                width="319px"
+                height="220px"
+              />
+              <div class="work-description">
+                <h3>Dentist</h3>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+            <div class="work image">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt="IMG"
+                width="319px"
+                height="220px"
+              />
+              <div class="work-description">
+                <h3>Dentist</h3>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+            <div class="work image">
+              <img
+                src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg"
+                alt="IMG"
+                width="319px"
+                height="220px"
+              />
+              <div class="work-description">
+                <h3>Dentist</h3>
+                <p>Teething trouble? Schedule a dental Checkup</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
